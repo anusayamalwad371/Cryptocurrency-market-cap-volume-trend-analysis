@@ -39,7 +39,7 @@ This project analyzes the historical price, volume, market cap, and volatility o
 ## 🚀 How to Run
 
 1. Clone the repo:
-   git clone https://github.com/your-username/crypto-analysis.git
+   git clone:  https://github.com/anusayamalwad371/Cryptocurrency-market-cap-volume-trend-analysis
 2.Install requirements:
   pip install -r requirements.txt
 3.Run Notebook:
