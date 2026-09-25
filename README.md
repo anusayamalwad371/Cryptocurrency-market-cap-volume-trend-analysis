@@ -1,80 +1,77 @@
-# Cryptocurrency Market Cap & Volume Trend Analysis
+ Cryptocurrency Market Cap Volume trend analysis 
 
-## Project Type
-Data Analyst / Final-Year Analytics Project
+A complete end-to-end Data Analysis project on Cryptocurrency market data using Python, SQL, and Power BI.
 
-## Objective
-Analyze cryptocurrency market capitalization, trading volume, price movement, market dominance and volatility using Python, SQL and Power BI.
+📊 Project Overview
 
-## Technology Stack
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- MySQL
-- Power BI
-- Jupyter Notebook
-- GitHub
+This project analyzes the historical price, volume, market cap, and volatility of top cryptocurrencies (like Bitcoin) to identify trends, risk, and investment opportunities.
 
-## Dataset
-The included CSV contains daily observations for 20 cryptocurrencies from January 2024 to June 2026.
+ 🎯 Objectives
+- Analyze price trends (Open, High, Low, Close)
+- Calculate daily returns & volatility
+- Find market dominance and market cap ranking
+- Create a Power BI dashboard for visualization
+- Perform SQL-based analysis
 
-### Main columns
-- date
-- coin_name
-- symbol
-- open_price
-- high_price
-- low_price
-- close_price
-- volume_24h
-- market_cap
-- daily_return_pct
-- volatility_pct
-- market_cap_rank
-- market_dominance_pct
+ 📁 Project Structure
+ ├── cleaned_crypto_market_data.csv   
+├── crypto_market_analysis.ipynb     
+├── crypto_market_queries.sql        
+├── db_connection.py                 
+├── requirements.txt                 
+├── Research_Notes.md                
+└── README.md                        
 
-> Note: The bundled dataset is an illustrative project dataset generated for practice/demo purposes. For a real-world portfolio project, replace it with a documented live/historical market-data source and cite that source.
+ 🛠️ Tech Stack
+- Python: Pandas, NumPy, Matplotlib, Seaborn
+- SQL: MySQL / PostgreSQL - for querying market data
+- Tools: Jupyter Notebook, VS Code, Git & GitHub
 
-## Project Workflow
-CSV → Python EDA → Cleaning → SQL Analysis → Power BI Dashboard → Insights
 
-## How to Run
-1. Install Python 3.10+.
-2. Install packages:
-   `pip install pandas numpy matplotlib seaborn jupyter mysql-connector-python`
-3. Open `notebooks/crypto_market_analysis.ipynb`.
-4. Run all cells.
-5. Create the MySQL database using `queries/crypto_market_queries.sql`.
-6. Import `data/cleaned/cleaned_crypto_market_data.csv` into MySQL.
-7. Build the Power BI dashboard using the fields listed in `dashboard/POWER_BI_DASHBOARD_GUIDE.md`.
 
-## Power BI KPIs
-- Total Market Cap
-- Total 24H Volume
-- Number of Cryptocurrencies
-- Average Price
-- Average Volatility
-- Top Cryptocurrency by Market Cap
+ 🔍 Key Analysis Done
+- Data Cleaning & Handling Missing Values
+- Daily Return % = `(Close - Open) / Open * 100`
+- Volatility Analysis
+- Market Dominance % Analysis
+- City-wise / Coin-wise aggregation (using GROUP BY)
 
-## Dashboard Pages
-1. Executive Overview
-2. Market Cap & Volume Trends
-3. Cryptocurrency Ranking
-4. Price, Volume & Volatility Analysis
+## 🚀 How to Run
 
-## Resume Description
-Developed an end-to-end Cryptocurrency Market Cap & Volume Trend Analysis project using Python, SQL and Power BI. Performed data cleaning and EDA, analyzed market capitalization, trading volume, market dominance and volatility, wrote SQL queries for business insights, and designed an interactive dashboard for trend and performance analysis.
+1. Clone the repo:
+   git clone https://github.com/your-username/crypto-analysis.git
+2.Install requirements:
+  pip install -r requirements.txt
+3.Run Notebook:
+  jupyter notebook crypto_market_analysis.ipynb.
 
-## Viva Topics
-- Why Pandas?
-- What is EDA?
-- Difference between market cap and volume?
-- What is volatility?
-- Why use SQL?
-- Why Power BI?
-- What is market dominance?
-- How did you handle missing values?
-- Which KPIs were used?
-- What business insights did you identify?
+📦 Dataset
+Source: CoinGecko / Crypto API
+Columns: 
+date,
+coin_name, 
+symbol, 
+open_price, 
+high_price,
+low_price,
+close_price, 
+volume_24h, 
+market_cap, 
+daily_return_pct, 
+volatility_pct
+
+
+👨‍💻 Author
+[Malwad Anusaya Ram] - Data Analyst | Pune, Maharashtra
+
+📝 Future Scope
+Add live API integration
+Add prediction model using Machine Learning
+Add top 10 coins comparison
+
+
+
+
+
+
+
